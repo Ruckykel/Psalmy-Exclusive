@@ -126,9 +126,11 @@ const HomeHero = () => {
                 Welcome to <br />
                 <span className="font-normal">Psalmy Exclusive clothing</span>
               </h1>
-              <button className="bg-white/90 hover:bg-white border border-white px-8 py-3 text-sm uppercase tracking-wider transition-colors duration-300">
-                Explore Collections
-              </button>
+              <a href="/Products">
+                <button className="bg-white/90 hover:bg-white border border-white px-8 py-3 text-sm uppercase tracking-wider transition-colors duration-300">
+                  Explore Collections
+                </button>
+              </a>
             </div>
           </div>
         </div>
