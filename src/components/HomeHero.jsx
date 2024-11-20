@@ -80,7 +80,7 @@ const HomeHero = () => {
               <span className="font-normal">Psalmy Exclusive clothing</span>
             </h1>
             <p className="text-lg text-gray-600 font-light mb-8 max-w-2xl mx-auto">
-              Experience the finest in contemporary design and craftsmanship. 
+              EXPERIENCE the finest in contemporary design and craftsmanship. 
               Our collections embody the perfect blend of tradition and innovation.
             </p>
             <a href="/Products">
