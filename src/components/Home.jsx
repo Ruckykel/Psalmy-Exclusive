@@ -3,8 +3,10 @@ import React from 'react'
 import Navbar from './Navbar'
 import HomeHero from './HomeHero'
 import BestSeller from './BestSeller'
-import HomeAbout from './HomeAbout'
 import Footer from './Footer'
+import AboutCompany from './AboutCompany'
+import AboutCeo from './AboutCeo'
+import Achievements from './Achievements'
 
 const Home = () => {
   return (
@@ -12,7 +14,9 @@ const Home = () => {
       <Navbar />
       <HomeHero />
       <BestSeller />
-      <HomeAbout />
+      <AboutCompany />
+      <AboutCeo />
+      <Achievements />
       <Footer />
     </div>
   )
