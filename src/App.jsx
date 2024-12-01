@@ -2,8 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home'
-import Products from './components/Products'
-import About from './components/About'
+import Collection from './components/Collection'
 import Contact from './components/Contact'
 
 
@@ -12,8 +11,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Products" element={<Products />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/Collection" element={<Collection />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
     </Router>
