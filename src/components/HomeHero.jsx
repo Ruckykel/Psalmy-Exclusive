@@ -77,7 +77,7 @@ const HomeHero = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-[3.5rem] leading-tight font-light mb-6">
               Welcome to <br />
-              <span className="font-normal">Psalmy Exclusive clothing</span>
+              <span className="font-normal">Psalmy Exclusive</span>
             </h1>
             <p className="text-lg text-gray-600 font-light mb-8 max-w-2xl mx-auto">
               Experience the finest in contemporary design and craftsmanship. 
@@ -124,7 +124,7 @@ const HomeHero = () => {
             <div className="text-center px-4">
               <h1 className="text-3xl leading-tight font-light mb-6 text-white drop-shadow-lg">
                 Welcome to <br />
-                <span className="font-normal">Psalmy Exclusive clothing</span>
+                <span className="font-normal">Psalmy Exclusive</span>
               </h1>
               <a href="/Products">
                 <button className="bg-white/90 hover:bg-white border border-white px-8 py-3 text-sm uppercase tracking-wider transition-colors duration-300">

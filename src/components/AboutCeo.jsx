@@ -28,7 +28,7 @@ const AboutCeo = () => {
                 {/* Text Content Section */}
                 <div className="space-y-5 xl:pl-11 ">
                   <h1 className="text-black text-lg md:text-left sm:text-xl font-normal uppercase">
-                     Ceo Psalmy Exclusive clothing
+                     Ceo Psalmy Exclusive
                   </h1>
                   <p className="text-black text-3xl md:text-left sm:text-4xl font-normal ">
                      Samuel Awonuga

@@ -29,7 +29,8 @@ const Navbar = () => {
   const navigationItems = [
     { name: 'Home', href: '/' },
     { name: 'Products', href: '/Products' },
-    { name: 'About', href: '/About' }
+    { name: 'About', href: '/About' },
+    { name: 'Contact', href: '/Contact' },
   ];
 
   return (
@@ -59,10 +60,11 @@ const Navbar = () => {
             ))}
             {/* Contact button - desktop only */}
             <a 
-              href="/Contact"
+              href="https://flutterwave.com/store/psalmyexclusive"
+              target="_blank" rel="noopener noreferrer"
               className="hidden lg:block bg-black text-white px-3 py-1.5 text-sm hover:opacity-80 transition-opacity"
             >
-              Contact
+              SHOP
             </a>
           </div>
 
@@ -94,10 +96,11 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="/Contact"
+              href="https://flutterwave.com/store/psalmyexclusive"
+              target="_blank" rel="noopener noreferrer"
               className="block px-3 py-2.5 text-base font-medium text-gray-700 hover:text-black hover:pl-4 transition-all duration-200"
             >
-              Contact
+              SHOP
             </a>
           </div>
         </div>

@@ -5,28 +5,24 @@ const products = [
   {
     id: 1,
     name: "Abstract Print Shirt",
-    price: "₦45,000",
     image: "/images/Seven1.jpg",
     hoverImage: "/images/Seven2.jpg"
   },
   {
     id: 2,
     name: "Patterned Loose Fit Pants",
-    price: "₦38,000",
     image: "/images/TwentyNine1.jpg",
     hoverImage: "/images/TwentyNine2.jpg"
   },
   {
     id: 3,
     name: "Oversized Cotton Blazer",
-    price: "₦52,000",
     image: "/images/ThirtyThree1.jpg",
     hoverImage: "/images/ThirtyThree2.jpg"
   },
   {
     id: 4,
     name: "Geometric Print Jacket",
-    price: "₦48,000",
     image: "/images/Six1.jpg",
     hoverImage: "/images/Six2.jpg"
   }
@@ -108,7 +104,6 @@ const BestSeller = () => {
             </div>
             <div className="mt-4 space-y-1">
               <h3 className="font-medium">{product.name}</h3>
-              <p className="text-gray-600">{product.price}</p>
             </div>
           </div>
         ))}

@@ -53,7 +53,7 @@ const ProductPictures = () => {
     <div className="container mx-auto px-4 py-8 mt-16">
       <h1 className="text-3xl sm:text-4xl leading-tight text-center font-normal mb-11 sm:mb-16">Products</h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {productStates.map((product) => (
           <motion.div
             key={product.id}
@@ -89,7 +89,6 @@ const ProductPictures = () => {
 
             <div className="mt-4 space-y-2">
               <h3 className="text-sm font-medium">{product.name}</h3>
-              <p className="text-sm">₦{product.price.toLocaleString()}</p>
             </div>
           </motion.div>
         ))}
