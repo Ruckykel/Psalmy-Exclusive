@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import ProductPictures from './ProductPictures'
 
-const Products = () => {
+const Collection = () => {
   return (
     <div className='overflow-x-hidden min-h-screen flex flex-col'>
       <Navbar />
@@ -14,4 +14,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default Collection
