@@ -126,7 +126,7 @@ const ProductPictures = () => {
 
   return (
     <div className="container mx-auto px-4 py-8 mt-16">
-      <h1 className="text-2xl sm:text-3xl leading-tight text-center font-normal mb-11 sm:mb-16 uppercase tracking-extra">Products</h1>
+      <h1 className="text-2xl sm:text-3xl leading-tight text-center font-normal mb-11 sm:mb-16 uppercase tracking-extra">Collection</h1>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {currentProducts.map((product) => (
