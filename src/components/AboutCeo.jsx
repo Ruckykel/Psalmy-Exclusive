@@ -20,13 +20,13 @@ const AboutCeo = () => {
                 
                 {/* Text Content Section */}
                 <div className="space-y-5 xl:pl-11 ">
-                  <h1 className="text-black text-lg md:text-left sm:text-xl font-normal uppercase">
+                  <h1 className="text-black text-lg md:text-left sm:text-xl font-normal uppercase tracking-extra">
                      Ceo Psalmy Exclusive
                   </h1>
-                  <p className="text-black text-3xl md:text-left sm:text-4xl font-normal ">
+                  <p className="text-black text-3xl md:text-left sm:text-4xl font-normal tracking-extra uppercase">
                      Samuel Awonuga
                   </p>
-                  <p className="text-gray-600 font-normal text-md  md:text-left">
+                  <p className="text-black font-normal text-sm sm:text-md  md:text-left leading-loose tracking-wide">
                    Accomplished Fashion Designer with 9+ years of expertise in crafting innovative,
                    market-driven collections. My track record demonstrates the ability to merge artistic
                    vision with commercial success, fostering brand growth and profitability. Proficient in

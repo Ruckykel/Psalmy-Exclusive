@@ -57,7 +57,7 @@ const SocialMedia = () => {
 
       <div className="max-w-4xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-base text-black tracking-wide mb-8">
             Connect with us through our social channels or send us an email.
           </p>
           <div className="h-px bg-black w-16 mx-auto"></div>
@@ -76,15 +76,15 @@ const SocialMedia = () => {
                 <div className="transform group-hover:scale-110 transition-transform duration-300">
                   {social.icon}
                 </div>
-                <h3 className="text-xl font-semibold">{social.name}</h3>
-                <p className="text-sm opacity-80">{social.handle}</p>
+                <h3 className="text-lg font-semibold uppercase tracking-extra">{social.name}</h3>
+                <p className="text-sm">{social.handle}</p>
               </div>
             </a>
           ))}
         </div>
 
         <div className="mt-16 text-center mb-20">
-          <p className="text-sm text-gray-600 mb-4">
+          <p className="text-sm text-black mb-4 tracking-wide">
             We typically respond within 24-48 hours
           </p>
           <div className="h-px bg-black w-16 mx-auto"></div>

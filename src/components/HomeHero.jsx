@@ -75,16 +75,16 @@ const HomeHero = () => {
           style={{ transitionDelay: '400ms' }}
         >
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-[3.5rem] leading-tight font-light mb-6">
+            <h1 className="text-3xl leading-relaxed font-light mb-6 uppercase tracking-extra">
               Welcome to <br />
-              <span className="font-normal">Psalmy Exclusive</span>
+              <span className="font-normal uppercase text-4xl">Psalmy Exclusive</span>
             </h1>
-            <p className="text-lg text-gray-600 font-light mb-8 max-w-2xl mx-auto">
+            <p className="text-sm text-black font-light mb-8 max-w-2xl mx-auto leading-loose uppercase tracking-extra">
               Experience the finest in contemporary design and craftsmanship. 
               Our collections embody the perfect blend of tradition and innovation.
             </p>
             <a href="/Products">
-            <button className="border border-black px-8 py-3 text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300">
+            <button className="border border-black px-8 py-3 text-xs uppercase tracking-extra hover:bg-black hover:text-white transition-colors duration-300">
               Explore Collections
             </button>
             </a>
@@ -122,12 +122,12 @@ const HomeHero = () => {
             }`}
           >
             <div className="text-center px-4">
-              <h1 className="text-3xl leading-tight font-light mb-6 text-white drop-shadow-lg">
+              <h1 className="text-3xl font-light mb-6 text-white drop-shadow-lg uppercase tracking-widest">
                 Welcome to <br />
                 <span className="font-normal">Psalmy Exclusive</span>
               </h1>
               <a href="/Products">
-                <button className="bg-white/90 hover:bg-white border border-white px-8 py-3 text-sm uppercase tracking-wider transition-colors duration-300">
+                <button className="bg-white/90 hover:bg-white border border-white px-8 py-3 text-xs uppercase tracking-extra transition-colors duration-300">
                   Explore Collections
                 </button>
               </a>

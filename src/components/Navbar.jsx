@@ -27,9 +27,9 @@ const Navbar = () => {
   }, [lastScrollY]);
 
   const navigationItems = [
-    { name: 'Home', href: '/' },
-    { name: 'Collection', href: '/Collection' },
-    { name: 'Contact', href: '/Contact' },
+    { name: 'HOME', href: '/' },
+    { name: 'COLLECTION', href: '/Collection' },
+    { name: 'CONTACT', href: '/Contact' },
   ];
 
   return (
@@ -51,7 +51,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="relative py-2 text-gray-700 hover:text-black transition-all duration-200 group"
+                className="relative py-2 text-black hover:text-black transition-all duration-200 group tracking-extra text-xs"
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-1/2 w-1 h-1 bg-black rounded-full transition-all duration-200 opacity-0 group-hover:opacity-100 group-hover:w-4" />
@@ -61,7 +61,7 @@ const Navbar = () => {
             <a 
               href="https://flutterwave.com/store/psalmyexclusive"
               target="_blank" rel="noopener noreferrer"
-              className="hidden lg:block bg-black text-white px-3 py-1.5 text-sm hover:opacity-80 transition-opacity"
+              className="hidden lg:block bg-black text-white px-3 py-1.5 text-xs hover:opacity-80 transition-opacity tracking-widest"
             >
               SHOP
             </a>
@@ -89,7 +89,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="block px-3 py-2.5 text-base font-medium text-gray-700 hover:text-black hover:pl-4 transition-all duration-200"
+                className="block px-3 py-2.5 text-xs font-medium text-black hover:text-black hover:pl-4 transition-all duration-200 tracking-extra"
               >
                 {item.name}
               </a>
@@ -97,7 +97,7 @@ const Navbar = () => {
             <a
               href="https://flutterwave.com/store/psalmyexclusive"
               target="_blank" rel="noopener noreferrer"
-              className="block px-3 py-2.5 text-base font-medium text-gray-700 hover:text-black hover:pl-4 transition-all duration-200"
+              className="block px-3 py-2.5 text-xs font-medium text-black hover:text-black hover:pl-4 transition-all duration-200 tracking-extra"
             >
               SHOP
             </a>

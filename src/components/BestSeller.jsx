@@ -155,7 +155,7 @@ const BestSeller = () => {
   return (
     <>
       <div className="w-full mx-auto sm:py-16 px-4 py-11">
-        <h2 className="text-3xl sm:text-4xl leading-tight text-center font-normal mb-11 sm:mb-16">Best Sellers</h2>
+        <h2 className="text-2xl sm:text-3xl leading-tight text-center font-normal mb-11 sm:mb-16 uppercase tracking-extra">Best Sellers</h2>
 
         <div 
           ref={scrollContainerRef}
@@ -197,7 +197,7 @@ const BestSeller = () => {
                 </div>
               </div>
               <div className="mt-4 space-y-1">
-                <h3 className="font-medium">{product.name}</h3>
+                <h3 className="font-medium uppercase tracking-extra text-xs">{product.name}</h3>
               </div>
             </div>
           ))}
@@ -219,7 +219,7 @@ const BestSeller = () => {
 
         <div className="flex justify-center">
           <a href="/Products">
-            <button className="border border-black mt-12 px-8 py-3 text-sm uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-300">
+            <button className="border border-black mt-12 px-8 py-3 text-xs uppercase tracking-extra hover:bg-black hover:text-white transition-colors duration-300">
               Find Your Perfect Style
             </button>
           </a>

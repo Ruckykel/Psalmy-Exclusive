@@ -126,7 +126,7 @@ const ProductPictures = () => {
 
   return (
     <div className="container mx-auto px-4 py-8 mt-16">
-      <h1 className="text-3xl sm:text-4xl leading-tight text-center font-normal mb-11 sm:mb-16">Products</h1>
+      <h1 className="text-2xl sm:text-3xl leading-tight text-center font-normal mb-11 sm:mb-16 uppercase tracking-extra">Products</h1>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {currentProducts.map((product) => (
@@ -163,7 +163,7 @@ const ProductPictures = () => {
             </div>
 
             <div className="mt-4 space-y-2">
-              <h3 className="text-sm font-medium">{product.name}</h3>
+              <h3 className="font-medium uppercase tracking-extra text-xs">{product.name}</h3>
             </div>
           </motion.div>
         ))}

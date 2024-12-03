@@ -13,7 +13,7 @@ const Achievements = () => {
     <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-12 container pb-16 pt-8 sm:pt-16">
     {/* Achievements Column */}
     <div className="group">
-      <h1 className="text-black text-3xl tracking-wider md:text-left sm:text-4xl font-normal uppercase mb-8">
+      <h1 className="text-black text-2xl md:text-left sm:text-3xl font-normal uppercase mb-8 tracking-extra">
         Achievements
       </h1>
       <div>
@@ -21,7 +21,7 @@ const Achievements = () => {
           {achievements.map((achievement, index) => (
             <li key={index} className="flex items-center space-x-3 group/item transition-all duration-300 hover:translate-x-1">
               <div className="w-1.5 h-1.5 bg-black group-hover/item:w-2 group-hover/item:h-2 transition-all duration-300" />
-              <span className="font-normal text-md tracking-wide">{achievement}</span>
+              <span className="font-normal text-md tracking-wide text-sm">{achievement}</span>
             </li>
           ))}
         </ul>

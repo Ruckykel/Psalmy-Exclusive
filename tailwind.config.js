@@ -5,7 +5,11 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        poppins: ['Poppins', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
+      letterSpacing: {
+        tighter: '-0.02em',
+        extra: '0.2em',
       },
       container: {
         center: true,
