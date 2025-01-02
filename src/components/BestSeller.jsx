@@ -5,25 +5,25 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 const products = [
   {
     id: 1,
-    name: "Abstract Print Shirt",
+    name: "Custom Beaded Suit",
     image: "/images/Seven1.jpg",
     hoverImage: "/images/Seven2.jpg"
   },
   {
     id: 2,
-    name: "Patterned Loose Fit Pants",
+    name: "Men’s wool camel coat with Fox fur",
     image: "/images/TwentyNine1.jpg",
     hoverImage: "/images/TwentyNine2.jpg"
   },
   {
     id: 3,
-    name: "Oversized Cotton Blazer",
+    name: "Amund oversized kaftan",
     image: "/images/ThirtyThree1.jpg",
     hoverImage: "/images/ThirtyThree2.jpg"
   },
   {
     id: 4,
-    name: "Geometric Print Jacket",
+    name: "Black Mesh Extended Bow Shirt",
     image: "/images/Six1.jpg",
     hoverImage: "/images/Six2.jpg"
   }

@@ -225,7 +225,7 @@ export const ProductData = [
       },
       {
         id: 33,
-        name: "Amund Oversize Kaftan",
+        name: "Amund Oversized Kaftan",
         price: 55000,
         mainImage: "/images/ThirtyThree1.jpg",
         hoverImage: "/images/ThirtyThree2.jpg"
