@@ -83,7 +83,7 @@ const HomeHero = () => {
               Experience the finest in contemporary design and craftsmanship. 
               Our collections embody the perfect blend of tradition and innovation.
             </p>
-            <a href="/Products">
+            <a href="/Collection" className='hidden'>
             <button className="border border-black px-8 py-3 text-xs uppercase tracking-extra hover:bg-black hover:text-white transition-colors duration-300">
               Explore Collections
             </button>
@@ -126,7 +126,7 @@ const HomeHero = () => {
                 Welcome to <br />
                 <span className="font-normal">Psalmy Exclusive</span>
               </h1>
-              <a href="/Collection">
+              <a href="/Collection" className='hidden'>
                 <button className="bg-white/90 hover:bg-white border border-white px-8 py-3 text-xs uppercase tracking-extra transition-colors duration-300">
                   Explore Collections
                 </button>

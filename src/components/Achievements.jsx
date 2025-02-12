@@ -10,9 +10,9 @@ const Achievements = () => {
         "Africa Fashion Week London- London UK (October 2023)"
       ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-12 container pb-16 pt-8 sm:pt-16">
+    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12 container pb-16 pt-8 sm:pt-16">
     {/* Achievements Column */}
-    <div className="group">
+    <div className="group hidden">
       <h1 className="text-black text-2xl md:text-left sm:text-3xl font-normal uppercase mb-8 tracking-extra">
         Achievements
       </h1>
@@ -39,9 +39,15 @@ const Achievements = () => {
       </div>
       <a 
         className="inline-block underline text-sm font-normal tracking-wide  transition-all duration-300 hover:translate-x-2" 
-        href=""
+        href="https://www.fashionghana.com/site/psalmy-exclusive-accra-fashion-week-2024/"
       >
-        Psalmy Exclusive stands out at designers headline Africa fashion week in London
+        https://www.fashionghana.com/site/psalmy-exclusive-accra-fashion-week-2024/
+      </a>
+      <a 
+        className="inline-block underline text-sm font-normal tracking-wide  transition-all duration-300 hover:translate-x-2 mt-4" 
+        href="https://allure.vanguardngr.com/2024/11/samuel-awonugas-psalmy-exclusive-where-african-heritage-meets-contemporary-style/"
+      >
+        https://allure.vanguardngr.com/2024/11/samuel-awonugas-psalmy-exclusive-where-african-heritage-meets-contemporary-style/
       </a>
     </div>
 
@@ -56,9 +62,9 @@ const Achievements = () => {
       </div>
       <a 
         className=" underline inline-block text-sm font-normal tracking-wide  transition-all duration-300 hover:translate-x-2" 
-        href=""
+        href="https://fashionbombdaily.com/2025/01/22/psalmy-exclusive-redefining-nigerian-fashion-with-bold-innovation/"
       >
-        Psalmy Exclusive Shines At Men's Fashion Week Nigeria With Exquisite Designs
+        https://fashionbombdaily.com/2025/01/22/psalmy-exclusive-redefining-nigerian-fashion-with-bold-innovation/
       </a>
     </div>
   </div>

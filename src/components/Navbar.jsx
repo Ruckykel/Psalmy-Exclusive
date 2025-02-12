@@ -61,7 +61,7 @@ const Navbar = () => {
             <a 
               href="https://flutterwave.com/store/psalmyexclusive"
               target="_blank" rel="noopener noreferrer"
-              className="hidden lg:block bg-black text-white px-3 py-1.5 text-xs hover:opacity-80 transition-opacity tracking-widest"
+              className="hidden bg-black text-white px-3 py-1.5 text-xs hover:opacity-80 transition-opacity tracking-widest"
             >
               SHOP
             </a>
@@ -97,7 +97,7 @@ const Navbar = () => {
             <a
               href="https://flutterwave.com/store/psalmyexclusive"
               target="_blank" rel="noopener noreferrer"
-              className="block px-3 py-2.5 text-xs font-medium text-black hover:text-black hover:pl-4 transition-all duration-200 tracking-extra"
+              className=" px-3 py-2.5 text-xs font-medium text-black hover:text-black hover:pl-4 transition-all duration-200 tracking-extra hidden"
             >
               SHOP
             </a>

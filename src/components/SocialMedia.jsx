@@ -2,27 +2,13 @@
 import React from 'react';
 import { Mail, Instagram, Linkedin, Twitter } from 'lucide-react';
 
-const TikTokIcon = (props) => (
-  <svg 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
-    className={props.className}
-  >
-    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
-  </svg>
-);
-
 const SocialMedia = () => {
   const socialLinks = [
     {
       name: 'Email',
       icon: <Mail className="w-6 h-6" />,
-      link: 'mailto:psalmy01@outlook.com',
-      handle: 'psalmy01@outlook.com'
+      link: 'mailto:info@psalmyexclusive.com',
+      handle: 'info@psalmyexclusive.com'
     },
     {
       name: 'Instagram',
@@ -42,12 +28,7 @@ const SocialMedia = () => {
       link: 'https://twitter.com/psalmyexclusive',
       handle: '@psalmyexclusive'
     },
-    {
-      name: 'TikTok',
-      icon: <TikTokIcon className="w-6 h-6" />,
-      link: 'https://tiktok.com/@psalmyexclusive',
-      handle: '@psalmyexclusive'
-    }
+  
   ];
 
   return (
