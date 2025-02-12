@@ -1,31 +1,34 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState, useRef, useEffect } from 'react';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 
 const products = [
   {
     id: 1,
-    name: "Custom Beaded Suit",
-    image: "/images/Seven1.jpg",
-    hoverImage: "/images/Seven2.jpg"
+    name: "Heritage Collection",
+    image: "/images/Heritage1.webp",
+    hoverImage: "/images/Heritage2.webp",
+    link: "https://www.behance.net/gallery/218152483/Heritage-Collection"
   },
   {
     id: 2,
-    name: "Men’s wool camel coat with Fox fur",
-    image: "/images/TwentyNine1.jpg",
-    hoverImage: "/images/TwentyNine2.jpg"
+    name: "Tweed x Abstract Series",
+    image: "/images/Tweed1.webp",
+    hoverImage: "/images/Tweed2.webp",
+    link: "https://www.behance.net/gallery/218153119/Tweed-x-Abstract-Series"
   },
   {
     id: 3,
-    name: "Amund oversized kaftan",
-    image: "/images/ThirtyThree1.jpg",
-    hoverImage: "/images/ThirtyThree2.jpg"
+    name: "Tweed x Abstract Series",
+    image: "/images/Tweed3.webp",
+    hoverImage: "/images/Tweed4.webp",
+    link: "https://www.behance.net/gallery/218153119/Tweed-x-Abstract-Series"
   },
   {
     id: 4,
-    name: "Black Mesh Extended Bow Shirt",
-    image: "/images/Six1.jpg",
-    hoverImage: "/images/Six2.jpg"
+    name: "SS23 Collection",
+    image: "/images/SS2.webp",
+    hoverImage: "/images/SS2.webp",
+    link: "https://www.behance.net/gallery/217504075/SS23-Collection"
   }
 ];
 
@@ -154,8 +157,8 @@ const BestSeller = () => {
 
   return (
     <>
-      <div className="w-full mx-auto sm:py-16 px-4 py-11">
-        <h2 className="text-2xl sm:text-3xl leading-tight text-center font-normal mb-11 sm:mb-16 uppercase tracking-extra">Best Sellers</h2>
+      <div className="w-full mx-auto px-4">
+        <h2 className="text-2xl sm:text-3xl leading-tight text-center font-normal mb-11 sm:mb-11 uppercase tracking-extra">Explore Collections</h2>
 
         <div 
           ref={scrollContainerRef}
@@ -167,8 +170,11 @@ const BestSeller = () => {
           }}
         >
           {products.map((product, index) => (
-            <div
+            <a
               key={product.id}
+              href={product.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`${
                 isMobile ? 'w-1/2' : 'w-1/4'
               } flex-shrink-0 px-2`}
@@ -177,7 +183,10 @@ const BestSeller = () => {
             >
               <div 
                 className="relative overflow-hidden group cursor-pointer"
-                onClick={() => openModal(product)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  openModal(product);
+                }}
               >
                 <div className="relative">
                   <img
@@ -196,10 +205,16 @@ const BestSeller = () => {
                   />
                 </div>
               </div>
-              <div className="mt-4 space-y-1">
-                <h3 className="font-medium uppercase tracking-extra text-xs">{product.name}</h3>
+              <div className="mt-4">
+                <div className="flex items-center gap-2 group/arrow">
+                  <h3 className="font-medium uppercase tracking-extra text-xs group-hover/arrow:underline transition-all duration-300">{product.name}</h3>
+                  <ArrowRight 
+                    size={16}
+                    className="transform transition-transform duration-300 group-hover/arrow:translate-x-2"
+                  />
+                </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
@@ -218,11 +233,9 @@ const BestSeller = () => {
         )}
 
         <div className="flex justify-center">
-          <a href="/Products">
-            <button className="border border-black mt-12 px-8 py-3 text-xs uppercase tracking-extra hover:bg-black hover:text-white transition-colors duration-300">
-              Find Your Perfect Style
-            </button>
-          </a>
+          <button className="border border-black mt-12 px-8 py-3 text-xs uppercase tracking-extra hover:bg-black hover:text-white transition-colors duration-300">
+            Find Your Perfect Style
+          </button>
         </div>
 
         <style jsx>{`
