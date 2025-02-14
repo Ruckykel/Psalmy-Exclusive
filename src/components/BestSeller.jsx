@@ -18,17 +18,17 @@ const products = [
   },
   {
     id: 3,
-    name: "Tweed x Abstract Series",
-    image: "/images/Tweed3.webp",
-    hoverImage: "/images/Tweed4.webp",
-    link: "https://www.behance.net/gallery/218153119/Tweed-x-Abstract-Series"
+    name: "SS23 Collection",
+    image: "/images/SS1.webp",
+    hoverImage: "/images/SS2.webp", 
+    link: "https://www.behance.net/gallery/217504075/SS23-Collection"
   },
   {
     id: 4,
-    name: "SS23 Collection",
-    image: "/images/SS2.webp",
-    hoverImage: "/images/SS2.webp",
-    link: "https://www.behance.net/gallery/217504075/SS23-Collection"
+    name: "SS24 Collection",
+    image: "/images/SS3.webp",
+    hoverImage: "/images/SS4.webp",
+    link: "https://www.behance.net/gallery/217504279/Bold-Edge-Collection-SS24"
   }
 ];
 
@@ -232,11 +232,13 @@ const BestSeller = () => {
           </div>
         )}
 
-        <div className="flex justify-center">
+        <a href="/Collection">
+         <div className="flex justify-center">
           <button className="border border-black mt-12 px-8 py-3 text-xs uppercase tracking-extra hover:bg-black hover:text-white transition-colors duration-300">
             Find Your Perfect Style
           </button>
-        </div>
+         </div>
+        </a>
 
         <style jsx>{`
           .hide-scrollbar {
