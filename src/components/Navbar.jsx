@@ -1,7 +1,6 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
-import Logo from '../assets/Logo.png'
+import { Menu, X, ShoppingCart } from 'lucide-react';
+import Logo from '../assets/Logo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,7 +41,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Brand logo */}
           <a href="/">
-            <img src={Logo} alt="Logo" className='w-32 hover:cursor-pointer' />
+            <img src={Logo} alt="Logo" className="w-32 hover:cursor-pointer" />
           </a>
 
           {/* Desktop navigation */}
@@ -57,31 +56,44 @@ const Navbar = () => {
                 <span className="absolute -bottom-1 left-1/2 w-1 h-1 bg-black rounded-full transition-all duration-200 opacity-0 group-hover:opacity-100 group-hover:w-4" />
               </a>
             ))}
-            {/* Contact button - desktop only */}
+            {/* Shop button with better icon - desktop */}
             <a 
-              href="https://flutterwave.com/store/psalmyexclusive"
+              href="https://psalmyexclusive.myshopify.com/collections/all"
               target="_blank" rel="noopener noreferrer"
-              className="hidden bg-black text-white px-3 py-1.5 text-xs hover:opacity-80 transition-opacity tracking-widest"
+              className="bg-black text-white px-6 py-1.5 text-xs hover:opacity-80 transition-opacity tracking-widest flex items-center gap-2"
             >
+              <ShoppingCart className="h-4 w-4" />
               SHOP
             </a>
           </div>
 
-          {/* Hamburger menu button */}
-          <button 
-            className="lg:hidden hover:opacity-70 transition-opacity"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
-          </button>
+          {/* Mobile navigation controls */}
+          <div className="flex items-center gap-4 lg:hidden">
+            {/* Shop icon for mobile - black with border */}
+            <a 
+              href="https://psalmyexclusive.myshopify.com/collections/all"
+              target="_blank" rel="noopener noreferrer"
+              className="text-black hover:opacity-70 transition-opacity border border-black p-1.5 rounded"
+            >
+              <ShoppingCart className="h-4 w-4" />
+            </a>
+            
+            {/* Hamburger menu button */}
+            <button 
+              className="hover:opacity-70 transition-opacity"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu - without shop button */}
       {isMenuOpen && (
         <div className="lg:hidden bg-white border-t">
           <div className="px-2 pt-2 pb-3 space-y-1">
@@ -94,13 +106,6 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
-            <a
-              href="https://flutterwave.com/store/psalmyexclusive"
-              target="_blank" rel="noopener noreferrer"
-              className=" px-3 py-2.5 text-xs font-medium text-black hover:text-black hover:pl-4 transition-all duration-200 tracking-extra hidden"
-            >
-              SHOP
-            </a>
           </div>
         </div>
       )}
